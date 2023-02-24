@@ -670,6 +670,15 @@ button{
     margin-bottom: 24px;
 }
 
+.modal-close:focus {
+    background-color: #4c59e6;
+    border: none;
+}
+
+.modal-close:focus .modal-close-icon {
+    fill: #FFFFFF;
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -712,7 +721,7 @@ button{
 }
 
 .modal-input:focus {
-    border-color: #4D5AE5;
+    border-color: #4c59e6;
 }
 
 .modal-input:focus + .input-icon {
@@ -733,6 +742,9 @@ button{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 8px 16px;
+    position: relative;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .modal-message::placeholder {
@@ -740,6 +752,41 @@ button{
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-section {
+    display: block;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.agreement-policy {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #757575;
+    display: flex;
+}
+
+.agreement-policy::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+
+.input-checkbox:checked + .agreement-policy::before {
+    background-color: #404BBF;
+    border: none;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-checkbox:focus + .agreement-policy::before {
+    border-color:#4c59e6;
 }
 
 .modal-btn {
@@ -764,9 +811,3 @@ button{
     height: 56px;
 }
 
-.agreement-policy {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #757575;
-}

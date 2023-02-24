@@ -431,7 +431,7 @@
 				</div>
 			</div>
 		</footer>
-		<div class="backdrop" data-modal>
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close" data-modal-close>
 					<svg class="modal-close-icon" width="8px" height="8px">
@@ -465,7 +465,7 @@
 								minlength="10"
 								required
 							/>
-							<svg class="input-icon" width="12px" height="12px">
+							<svg class="input-icon" width="13px" height="13px">
 								<use href="./images/icons.svg#icon-tel"></use>
 							</svg>
 						</span>
@@ -479,7 +479,7 @@
 								class="modal-input"
 								required
 							/>
-							<svg class="input-icon" width="12px" height="12px">
+							<svg class="input-icon" width="15px" height="12px">
 								<use href="./images/icons.svg#icon-email"></use>
 							</svg>
 						</span>
@@ -493,16 +493,16 @@
 							placeholder="Text input"
 						></textarea>
 					</label>
-					<span>
+					<span class="checkbox-section">
 							<input
 								type="checkbox"
                 id="policy"
                 value="true"
-                class="input-checkbox"
+                class="input-checkbox visually-hidden"
 								required
 							/>
-              <label for="policy">
-                <span class="agreement-policy">I accept the terms and conditions of the <a href="" class="policy">Privacy Policy</a> 
+              <label for="policy" class="agreement-policy">
+                <span>I accept the terms and conditions of the <a href="" class="policy">Privacy Policy</a> 
                 </span> 
               </label>
 						</span>
