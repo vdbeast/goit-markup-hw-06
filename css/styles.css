@@ -205,6 +205,7 @@ button{
     display: flex;
     align-items: center;
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
@@ -584,9 +585,6 @@ button{
     max-width: 264px;
 }
 
-
-.footer-soc-column{}
-
 .footer-soc-subtitle {
     font-weight: 500;
     font-size: 16px;
@@ -625,6 +623,73 @@ button{
 .footer-soc-icon{
     fill: #F4F4FD;
 }
+
+.footer-input-column {
+    margin-left: auto;
+}
+
+.footer-input-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-input-wrap {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input-btn {
+    padding: 8px 24px;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition)
+}
+
+.footer-input-btn:is(:hover, :focus) {
+    background-color: #404BBF;
+}
+
+.footer-input-btn-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+
+.footer-input-icon {
+    fill: #FFFFFF;
+}
+
 
 
 /*======================BACKDROP========================*/
@@ -668,14 +733,16 @@ button{
     margin-left: auto;
     padding: 0;
     margin-bottom: 24px;
+    transition: background-color var(--transition), fill var(--transition);
 }
 
-.modal-close:focus {
+.modal-close:is(:hover, :focus) {
     background-color: #4c59e6;
     border: none;
 }
 
-.modal-close:focus .modal-close-icon {
+.modal-close:focus .modal-close-icon,
+.modal-close:hover .modal-close-icon {
     fill: #FFFFFF;
 }
 
@@ -718,6 +785,7 @@ button{
     padding-left: 38px;
     padding-right: 16px;
     outline: transparent;
+    transition: border-color var(--transition);
 }
 
 .modal-input:focus {
@@ -733,6 +801,7 @@ button{
     left: 19px;
     top: 50%;
     transform: translatey(-50%);
+    transition: fill var(--transition);
 }
 
 .modal-message {
@@ -766,6 +835,8 @@ button{
     letter-spacing: 0.04em;
     color: #757575;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .agreement-policy::before {
@@ -775,6 +846,7 @@ button{
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     margin-right: 6px;
+    transition: background-color var(--transition);
 }
 
 .input-checkbox:checked + .agreement-policy::before {
@@ -801,6 +873,7 @@ button{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
     margin-left: auto;
     margin-right: auto;
@@ -809,5 +882,9 @@ button{
     transition: background-color var(--transition);
     width: 169px;
     height: 56px;
+    transition: background-color var(--transition)
 }
 
+.modal-btn:is(:hover, :focus) {
+    background-color: #404BBF;
+}
