@@ -429,22 +429,22 @@
 						</li>
 					</ul>
 				</div>
-        <div class="footer-input-column">
+				<div class="footer-input-column">
 					<p class="footer-input-subtitle">Subscribe</p>
-          <form class="footer-input-wrap">
-            <input
-  						type="email"
-  						name="user-email"
-  						class="footer-input"
-              placeholder="E-mail"
-  					/>
-            <button type="submit" class="footer-input-btn">
-              <span class="footer-input-btn-text">Subscribe</span>
-              <svg class="footer-input-icon" width="24px" height="20px">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg> 
-            </button>
-          </form>
+					<form class="footer-input-wrap">
+						<input
+							type="email"
+							name="user-email"
+							class="footer-input"
+							placeholder="E-mail"
+						/>
+						<button type="submit" class="footer-input-btn">
+							<span class="footer-input-btn-text">Subscribe</span>
+							<svg class="footer-input-icon" width="24px" height="20px">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
+					</form>
 				</div>
 			</div>
 		</footer>
@@ -460,13 +460,7 @@
 					<label>
 						<span class="input-title">Name</span>
 						<span class="input-wrap">
-							<input
-								type="name"
-								name="user-name"
-								class="modal-input"
-								minlength="2"
-								required
-							/>
+							<input type="text" name="user-name" class="modal-input" />
 							<svg class="input-icon" width="12px" height="12px">
 								<use href="./images/icons.svg#icon-name"></use>
 							</svg>
@@ -510,19 +504,20 @@
 						></textarea>
 					</label>
 					<span class="checkbox-section">
-							<input
-								type="checkbox"
-                id="policy"
-                value="true"
-                class="input-checkbox visually-hidden"
-								required
-							/>
-              <label for="policy" class="agreement-policy">
-                <span>I accept the terms and conditions of the <a href="" class="policy">Privacy Policy</a> 
-                </span> 
-              </label>
-						</span>
-					</label>
+						<input
+							type="checkbox"
+							id="policy"
+							value="true"
+							class="input-checkbox visually-hidden"
+							required
+						/>
+						<label for="policy" class="agreement-policy">
+							<span
+								>I accept the terms and conditions of the
+								<a href="" class="policy">Privacy Policy</a>
+							</span>
+						</label>
+					</span>
 					<button class="modal-btn" type="submit">Send</button>
 				</form>
 			</div>
