@@ -53,7 +53,6 @@ button{
     padding-right: 15px;
     margin: 0 auto;
     display: flex;
-    gap: 120px;
 }
 
 .visually-hidden {
@@ -583,6 +582,7 @@ button{
     letter-spacing: 0.02em;
     color: #E7E9FC;
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-soc-subtitle {
@@ -859,6 +859,10 @@ button{
 
 .input-checkbox:focus + .agreement-policy::before {
     border-color:#4c59e6;
+}
+
+.policy {
+    color: #4D5AE5
 }
 
 .modal-btn {
